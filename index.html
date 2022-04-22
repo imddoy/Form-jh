@@ -39,7 +39,12 @@
                 <td><input id="pw" type="password" placeholder="pw를 입력해주세요" ></td>
             </tr>
         </table>
-            <button type="summit" id="log">로그인</button>
+            <button type="submit" id="log">로그인</button>
+        </fieldset>
+        <fieldset>
+            <legend>당신이 준호를 사랑하는 정도는?</legend>
+            <input type="text" value="죽을만큼 사랑해💓"readonly><br>
+            <input type="range" id="love" value="100" min="0" max="100" step="10">
         </fieldset>
         <fieldset id="season">
             <legend>당신의 입덕시기는?</legend>
@@ -78,7 +83,7 @@
                 <option value="sixth drama">옷소매 붉은 끝동</option>
             </datalist>
         </fieldset>
-        <button type="summit">제출하기</button>
+        <button type="submit">제출하기</button>
         <button type="reset">다시하기</button>
     </div>
 </body>
