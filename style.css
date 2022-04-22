@@ -1,0 +1,67 @@
+#container{
+    width: 900px;
+    margin:0px auto;
+    padding: 20px;
+    background-color: white;
+}
+body{
+    background:url(https://w.namu.la/s/7e771a3fc89ed549a13b1dab44eef0d461b249450cb25b0e43408a4ce5546c04a35197952b79e1e5942b7072df9d2f320dfaaa472ed071c82e38594581a122585f78caa668af1f1c6e9dba0a1f103bf8) fixed;
+    background-repeat: auto;
+    background-color: lightyellow;
+}
+header{
+    float: right;
+}
+a>img{
+    width: 30px;
+    margin: 10px;
+}
+h1{
+    clear:right;
+    text-align: center;
+    color: rgb(192, 71, 91);
+    text-shadow: 5px 5px 5px 5px gray;
+}
+p{
+    color: lightgray;
+    text-decoration: line-through;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+nav{
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+    border: 2px solid pink;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+}
+a:link{
+    text-decoration: none;
+    color:black;
+}
+a:target, a:visited{
+    color:rgb(192, 71, 91);
+}
+#profile{
+    text-align: center;
+}
+#profile>img{
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 7px lightgray;
+}
+table{
+    float:left;
+    border-collapse: collapse;
+}
+#log{
+    height: 55px;
+    border-radius: 10px;
+    margin-left: 5px;
+}

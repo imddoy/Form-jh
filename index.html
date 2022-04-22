@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>💫당신의 준호는?💫</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header  id="home">
+        <a href="https://twitter.com/dlwnsghek" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/ko/thumb/9/9e/%ED%8A%B8%EC%9C%84%ED%84%B0_%EB%A1%9C%EA%B3%A0_%282012%29.svg/1267px-%ED%8A%B8%EC%9C%84%ED%84%B0_%EB%A1%9C%EA%B3%A0_%282012%29.svg.png"></a>
+        <a href="https://www.instagram.com/le2jh/" target="_blank"><img src="https://w7.pngwing.com/pngs/115/1008/png-transparent-instagram-application-logo-computer-icons-logo-instagram-miscellaneous-purple-violet-thumbnail.png"></a>
+        </header>
+        <h1>당신이 좋아하는 준호를 알려주세요!!</h1>
+        <p>내가 준호를 사랑하면 외않되..?</p>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#season">Season</a></li>
+                    <li><a href="#solo">Solo</a></li>
+                    <li><a href="#jhdrama">Drama</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="profile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSchExeoN_CJkGOZYIFfra8kFptbtgTtzVezg&usqp=CAU">
+        </div>
+        <fieldset id="login">
+            <table>
+            <legend>로그인</legend>
+            <tr>
+                <th><lable for="id">ID</lable></th>
+                <td><input id="id" type="text" placeholder="id를 입력해주세요" required autofocus></td>
+            </tr>
+            <tr>
+                <th><lable for="pw">PW</lable></th>
+                <td><input id="pw" type="password" placeholder="pw를 입력해주세요" ></td>
+            </tr>
+        </table>
+            <button type="summit" id="log">로그인</button>
+        </fieldset>
+        <fieldset id="season">
+            <legend>당신의 입덕시기는?</legend>
+            <input type="radio" id="tentoten" name="입덕시기" value="tentoten">10점 만점에 10점<br>
+            <input type="radio" name="입덕시기" value="aaa">Again&Again<br>
+            <input type="radio" name="입덕시기" value="heartbeat">Heartbeat<br>
+            <input type="radio" name="입덕시기" value="withoutu">Without U<br>
+            <input type="radio" name="입덕시기" value="illbeback">I'll Be Back<br>
+            <input type="radio" name="입덕시기" value="handsup">Hands Up<br>
+            <input type="radio" name="입덕시기" value="hanibbun">하.니.뿐.<br>
+            <input type="radio" name="입덕시기" value="gograzy">미친거 아니야?<br>
+            <input type="radio" name="입덕시기" value="myhouse">우리집<br>
+            <input type="radio" name="입덕시기" value="promise">Promise<br>
+            <input type="radio" name="입덕시기" value="gundae">군백기<br>
+            <input type="radio" name="입덕시기" value="makeit">해야 해<br>
+        </fieldset>
+        <fieldset id="solo">
+            <legend>당신의 최애 준호 솔로 앨범은?</legend>
+            <select id="soloalbum" size="3" multiple>
+                <option value="feel">Feel</option>
+                <option value="One">One</option>
+                <option value="Canvas">Canvas</option>
+                <option value="wintersleep">겨울잠</option>
+                <option value="Two">Two</option>
+            </select>
+        </fieldset>
+        <fieldset id="jhdrama">
+            <legend>당신의 최애 준호 드라마는?</legend>
+            <input type="text" list="drama">
+            <datalist id="drama">
+                <option value="first drama">기억</option>
+                <option value="second drama">김과장</option>
+                <option value="third drama">그냥 사랑하는 사이</option>
+                <option value="fourth drama">기름진 멜로</option>
+                <option value="fiveth drama">자백</option>
+                <option value="sixth drama">옷소매 붉은 끝동</option>
+            </datalist>
+        </fieldset>
+        <button type="summit">제출하기</button>
+        <button type="reset">다시하기</button>
+    </div>
+</body>
+</html>
