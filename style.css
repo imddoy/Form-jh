@@ -4,6 +4,13 @@
     padding: 20px;
     background-color: white;
 }
+form{
+    width: 80%;
+    margin:0 auto;
+}
+form :not(#log){
+    text-align: center;
+}
 body{
     background:url(https://w.namu.la/s/7e771a3fc89ed549a13b1dab44eef0d461b249450cb25b0e43408a4ce5546c04a35197952b79e1e5942b7072df9d2f320dfaaa472ed071c82e38594581a122585f78caa668af1f1c6e9dba0a1f103bf8) fixed;
     background-repeat: auto;
@@ -31,26 +38,46 @@ p{
 }
 nav{
     text-align: center;
+    padding:0px;
+    width: 80%;
+    margin:0 auto;
+    overflow:hidden;
 }
 ul{
     list-style-type: none;
 }
 li{
-    display: inline-block;
+    display: block;
+    width:15%;
+    float:left;
+    margin: 10px;
+}
+a:not([target=_blank]){
     border: 2px solid pink;
-    width: 100px;
-    text-align: center;
-    padding: 10px;
+    background-clip: padding-box;
+    padding: 8px;
+}
+a:hover, a:active{
+    background-color: yellow;
 }
 a:link{
     text-decoration: none;
     color:black;
+    font-size: 20px;
+    font-weight: bold;
+}
+#home>a{
+    padding:0px;
+    margin: 0px
 }
 a:target, a:visited{
     color:rgb(192, 71, 91);
 }
 #profile{
     text-align: center;
+    clear:left;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 #profile>img{
     border-radius: 50%;
@@ -58,10 +85,26 @@ a:target, a:visited{
 }
 table{
     float:left;
+    border:1px solid lightgray;
     border-collapse: collapse;
+    margin-left: 200px;
+}
+#id, #pw{
+    border: none;
 }
 #log{
     height: 55px;
     border-radius: 10px;
-    margin-left: 5px;
+    float:left;
+    margin-left: 10px;
+}
+input:checked + label{
+    color: red;
+}
+:target:not(header){
+    background-color: beige;
+}
+button:only-of-type{
+    background-color:black;
+    color:white;
 }

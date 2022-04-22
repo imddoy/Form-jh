@@ -27,19 +27,21 @@
         <div id="profile">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSchExeoN_CJkGOZYIFfra8kFptbtgTtzVezg&usqp=CAU">
         </div>
+        <form>
         <fieldset id="login">
             <table>
             <legend>로그인</legend>
-            <tr>
+            <tr id="idrow">
                 <th><lable for="id">ID</lable></th>
                 <td><input id="id" type="text" placeholder="id를 입력해주세요" required autofocus></td>
             </tr>
-            <tr>
+            <tr id="pwrow">
                 <th><lable for="pw">PW</lable></th>
                 <td><input id="pw" type="password" placeholder="pw를 입력해주세요" ></td>
             </tr>
         </table>
             <button type="submit" id="log">로그인</button>
+            <input type="hidden" value="사이트를 통한 로그인">
         </fieldset>
         <fieldset>
             <legend>당신이 준호를 사랑하는 정도는?</legend>
@@ -48,18 +50,30 @@
         </fieldset>
         <fieldset id="season">
             <legend>당신의 입덕시기는?</legend>
-            <input type="radio" id="tentoten" name="입덕시기" value="tentoten">10점 만점에 10점<br>
-            <input type="radio" name="입덕시기" value="aaa">Again&Again<br>
-            <input type="radio" name="입덕시기" value="heartbeat">Heartbeat<br>
-            <input type="radio" name="입덕시기" value="withoutu">Without U<br>
-            <input type="radio" name="입덕시기" value="illbeback">I'll Be Back<br>
-            <input type="radio" name="입덕시기" value="handsup">Hands Up<br>
-            <input type="radio" name="입덕시기" value="hanibbun">하.니.뿐.<br>
-            <input type="radio" name="입덕시기" value="gograzy">미친거 아니야?<br>
-            <input type="radio" name="입덕시기" value="myhouse">우리집<br>
-            <input type="radio" name="입덕시기" value="promise">Promise<br>
-            <input type="radio" name="입덕시기" value="gundae">군백기<br>
-            <input type="radio" name="입덕시기" value="makeit">해야 해<br>
+            <input type="radio" id="tentoten" name="입덕시기" value="tentoten">
+            <label for="tentoten">10점 만점에 10점</label><br>
+            <input type="radio" id="aaa" name="입덕시기" value="aaa">
+            <label for="aaa">Again&Again</label><br>
+            <input type="radio" id="heartbeat" name="입덕시기" value="heartbeat">
+            <label for="heartbeat">Heartbeat</label><br>
+            <input type="radio" id="withoutu" name="입덕시기" value="withoutu">
+            <label for="withoutu">Without U</label><br>
+            <input type="radio" id="illbeback" name="입덕시기" value="illbeback">
+            <label for="illbeback">I'll Be Back</label><br>
+            <input type="radio" id="handsup" name="입덕시기" value="handsup">
+            <label for="handsup">Hands Up</label><br>
+            <input type="radio" id="hanibbun" name="입덕시기" value="hanibbun">
+            <label for="hanibbun">하.니.뿐.</label><br>
+            <input type="radio" id="gocrazy" name="입덕시기" value="gograzy">
+            <label for="gocrazy">미친거 아니야?</label><br>
+            <input type="radio" id="myhouse" name="입덕시기" value="myhouse">
+            <label for="myhouse">우리집</label><br>
+            <input type="radio" id="promise" name="입덕시기" value="promise">
+            <label for="promise">Promise</label><br>
+            <input type="radio" id="gundae" name="입덕시기" value="gundae">
+            <label for="gundae">군백기</label><br>
+            <input type="radio" id="makeit" name="입덕시기" value="makeit">
+            <label for="makeit">해야 해</label><br>
         </fieldset>
         <fieldset id="solo">
             <legend>당신의 최애 준호 솔로 앨범은?</legend>
@@ -85,6 +99,7 @@
         </fieldset>
         <button type="submit">제출하기</button>
         <button type="reset">다시하기</button>
+    </form>
     </div>
 </body>
 </html>
