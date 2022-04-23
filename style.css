@@ -57,7 +57,7 @@ a:not([target=_blank]){
     background-clip: padding-box;
     padding: 8px;
 }
-a:hover, a:active{
+a:hover:not([target=_blank]), a:active:not([target=_blank]){
     background-color: yellow;
 }
 a:link{
@@ -107,4 +107,10 @@ input:checked + label{
 button:only-of-type{
     background-color:black;
     color:white;
+}
+button:only-of-type:hover{
+    transform: scale(1.2,1.2);
+}
+a:hover{
+    transform: rotateY(20deg);
 }
